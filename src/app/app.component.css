@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -46,6 +47,12 @@ header.schedule{
     
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -84,7 +91,7 @@ header{
     color: #48A09A
 }
 
-button{
+header button{
     padding: 9px 25px;
     background-color: #409097;
     border: none;
@@ -99,5 +106,9 @@ button{
 
 button:hover{
     background-color: #1C4881;
+}
+
+.picsum-img-wrapper img{
+    width: 100%;
 }
 

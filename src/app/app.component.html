@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pantanos De Villa</title>
-    <link rel="stylesheet" href="app.component.css">
-  </head>
-  <body>
-    <header class="address_bar">
-      <div>
-        <p>Alameda Las Garzas Reales s/n - Chorrillos, Lima</p>
-      </div>
-    </header>
 
-    <header>
-      <img class="logo" src="http://imgfz.com/i/dZ5VoBH.png" alt="logo">
-      <nav>
-        <ul class="nav_links">
-          <li><a href="#">INICIO</a></li>
-          <li><a href="#">NOSOTROS</a></li>
-          <li><a href="#">SERVICIOS</a></li>
-          <li><a href="#">PRODUCTOS</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="#"><button>COMPRAR</button></a>
-      </header>
-      <header class="schedule">
-      <div>
-        <p>Horario de atención: Lunes-Viernes y feriados de 8:00am a 5:00pm</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pantanos De Villa</title>
+  <link rel="stylesheet" href="/src/app/app.component.css">
+</head>
+
+<body>
+
+  <header class="address_bar">
+    <div>
+      <p>Alameda Las Garzas Reales s/n - Chorrillos, Lima</p>
+    </div>
+  </header>
+
+  <header>
+    <img class="logo" src="http://imgfz.com/i/dZ5VoBH.png" alt="logo">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">NOSOTROS</a></li>
+        <li><a href="#">SERVICIOS</a></li>
+        <li><a href="#">PRODUCTOS</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#"><button>COMPRAR</button></a>
+  </header>
+  <header class="schedule">
+    <div>
+      <p>Horario de atención: Lunes-Viernes y feriados de 8:00am a 5:00pm</p>
+    </div>
+  </header>
+
+  <!--CARROUSEL-->
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[0]" alt="Random first slide" />
       </div>
-    </header>
+      <div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="images[1]" alt="Random second slide" />
+      </div>
+      <div class="carousel-caption">
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+			<img [src]="images[2]" alt="Random third slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>Third slide label</h3>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+		</div>
+	</ng-template>
+</ngb-carousel>
+  
+  
+
+  <!--END OF CARROUSEL-->
+
+
+
+
+
+
+
+
+
   </body>
-</html>
 
+</html>
