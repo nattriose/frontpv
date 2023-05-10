@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pantanos De Villa</title>
   <link rel="stylesheet" href="/src/app/app.component.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<!--DIRECCION-->
+  <!--DIRECCION-->
 
   <header class="address_bar">
     <div>
@@ -18,7 +22,7 @@
     </div>
   </header>
 
-<!--NAVIGATION BAR-->
+  <!--NAVIGATION BAR-->
   <header>
     <img class="logo" src="http://imgfz.com/i/dZ5VoBH.png" alt="logo">
     <nav>
@@ -38,15 +42,15 @@
     </div>
   </header>
 
-  <!--CARROUSEL-->
-  <ngb-carousel >
+  <!--CAROUSEL-->
+  <ngb-carousel>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
         <img src="http://imgfz.com/i/icseT0a.jpeg" alt="Random first slide" />
       </div>
       <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h3>Refugio de Vida Silvestre Pantanos de Villa</h3>
+        <p>Pantanos de Villa es un destino de observación de aves, siendo humedal de gran importancia, considerando como sitio RAMSAR.</p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
@@ -54,53 +58,139 @@
         <img src="http://imgfz.com/i/0sPgmkX.jpeg" alt="Random second slide" />
       </div>
       <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>La RVSPV conserva una biodiversidad de especies. Es un hábitat natural que muy bien puede servir a generaciones para que puedan ver de cerca un ecosistema. También actúa como un pulmón de la agitada ciudad, purificando su aire.</p>
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="picsum-img-wrapper">
-			<img src="http://imgfz.com/i/0Txzrg7.jpeg" alt="Random third slide" />
-		</div>
-		<div class="carousel-caption">
-			<h3>Third slide label</h3>
-			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-		</div>
-	</ng-template>
-</ngb-carousel>
+        <img src="http://imgfz.com/i/0Txzrg7.jpeg" alt="Random third slide" />
+      </div>
+      <div class="carousel-caption">
+        <p>Pantanos de Villa sirve como una pequeña fuente de investigación para estudiantes de los distintos centros educativos y universidades de Lima debido a su gran biodiversidad.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+  <!--WELCOME-->
+  <div class="contenedor">
+
+    <div class="imagen" style="background-image: url('http://imgfz.com/i/kbQ6NMC.jpeg');">
+    </div>
+
+    <div class="texto">
+      <h2>Bienvenidos a Pantanos de Villa</h2>
+      <p>Los Pantanos de Villa cuentan hoy en día con mayores atractivos eco turístico para los visitantes de esta gran Lima, del interior del país y del extranjero. Por ello, nuestro trabajo está orientado a servirte y a satisfacer tus necesidades de educación, recreación y entretenimiento.</p>
+      <!-- <img src="http://imgfz.com/i/yhtjwBT.png" alt="Descripción de la imagen"> -->
+    </div>
+  </div>
+
+  <!--CARD CONTAINER-->
+
+  <div class="card-container">
+    <div class="card">
+      <img class="card-image" src="http://imgfz.com/i/Ty0pns8.jpeg" alt="Image 1">
+      <h2 class="card-title">Circuito Tradicional</h2>
+      <p class="card-description">Caminata de 1,5 km (ida y vuelta) donde se llegará al mirador Nº 2 y Nº 3  desde donde se puede apreciar la Laguna Mayor con una extensión de 50 Has. y 3 metros de profundidad. En ella se refugia una gran diversidad de especies de aves. </p>
+      <a class="card-button" href="#">Ver más</a>
+    </div>
+    <div class="card">
+      <img class="card-image" src="http://imgfz.com/i/BHaXu1r.jpeg" alt="Image 2">
+      <h2 class="card-title">Circuito Génesis</h2>
+      <p class="card-description">Recorrido  en bote en la laguna Génesis de  2 hectáreas de extensión y 1,20 metros de profundidad, apreciando diversidad de flora y fauna característica de los Pantanos de Villa.</p>
+      <a class="card-button" href="#">Ver más</a>
+    </div>
+    <div class="card">
+      <img class="card-image" src="http://imgfz.com/i/MLFQSHI.jpeg" alt="Image 3">
+      <h2 class="card-title">Circuito Marvilla</h2>
+      <p class="card-description">Caminata de 1,3 kilometros aproximadamente alrededor de la Laguna Marvilla de 4 hectarias de extensión, donde se observa una mayor diversidad de especies en su hábitat natural.</p>
+      <a class="card-button" href="#">Ver más</a>
+    </div>
+  </div>
   
-<div class="contenedor">
+
   
-  <div class="imagen" style="background-image: url('http://imgfz.com/i/kbQ6NMC.jpeg');">
+
+  <div class="contenedor">
+
+    <div class="imagen-flora" style="background-image: url('http://imgfz.com/i/EhX40oQ.jpeg');">
+      <button class="button">
+        Nuestra Flora
+      </button>
+    </div>
+
+    <div class="imagen-fauna" style="background-image: url('http://imgfz.com/i/OL6eHdt.jpeg');">
+      <button class="button">
+        Nuestra Fauna
+      </button>
+    </div>
   </div>
 
-  <div class="texto">
-    <h2>Bienvenidos al Portal</h2>
-    <p>Los Pantanos de Villa te da la cordial bienvenida a su renovado portal donde podrás encontrar toda la información de interés que te permitirá conocer un poco más sobre esta área natural protegida</p>
-    <!-- <img src="http://imgfz.com/i/yhtjwBT.png" alt="Descripción de la imagen"> -->
-  </div>
-</div>
 
-<div class="contenedor">
   
-  <div class="imagen-flora" style="background-image: url('http://imgfz.com/i/kbQ6NMC.jpeg');">
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <h3>Sagar<span>Developer</span></h3>
+
+      <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+          |
+          <a href="#">Blog</a>
+      </p>
+
+      <p class="footer-company-name">Copyright © 2021 <strong>SagarDeveloper</strong> All rights reserved</p>
   </div>
 
-  <div class="imagen-fauna" style="background-image: url('http://imgfz.com/i/kbQ6NMC.jpeg');">
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Ghaziabad</span>
+              Delhi</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 74**9**258</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:sagar00001.co@gmail.com">xyz@gmail.com</a></p>
+      </div>
   </div>
-</div>
+  <div class="footer-right">
+      <p class="footer-company-about">
+          <span>About the company</span>
+          <strong>Sagar Developer</strong> is a Youtube channel where you can find more creative CSS Animations
+          and
+          Effects along with
+          HTML, JavaScript and Projects using C/C++.
+      </p>
+      <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+  </div>
+</footer>
 
 
-
-
-
-
-
-
-
-
-
-
-  </body>
 
 </html>
