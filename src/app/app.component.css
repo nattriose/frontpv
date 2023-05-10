@@ -133,24 +133,66 @@ button:hover {
     margin: 20px;
     justify-content: space-between;
     display: flex;
+    align-items: center;
     
 }
 
 .texto {
     width: 50%;
-    height: 400px;
+    height: 100%;
     background-color: #48A09A;
     border-radius: 0px 10px 10px 0px;
     margin-right: 40px;
+    background-image: url("http://imgfz.com/i/yhtjwBT.png");
+    background-size: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-.texto img{
-    position: absolute;
-    object-fit: contain;
+.texto h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    margin: 20px;
+
+    
+}
+
+.texto p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; /* Center the text within the container */
+    padding-top: 10px;
+    margin: 20px;
+
 }
 
 .imagen {
     width: 50%;
     height: 400px;
     border-radius: 10px 0px 0px 10px;
+}
+
+.imagen-flora {
+    width: 50%;
+    height: 400px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.imagen-fauna {
+    width: 50%;
+    height: 400px;
+    border-radius: 0px 1px 10px 0px;
+
+    width: 50%;
+    height: 100%;
+    background-color: #48A09A;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 40px;
 }
