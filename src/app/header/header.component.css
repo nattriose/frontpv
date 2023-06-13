@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 10px;
+    color:#FFFFFF;
+}
+
+.navigation a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+header.address_bar {
+    background-color: #1C4881;
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 5%;
+
+}
+
+header.schedule {
+    background-color: #48A09A;
+    height: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 5%;
+
+}
+
+.address_bar div p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+
+}
+
+.schedule div p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    height: 100px;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #48A09A
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: #409097;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background-color: #1C4881;
+}
+
+header button:hover {
+    background-color: #1C4881;
+}
