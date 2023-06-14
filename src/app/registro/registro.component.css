@@ -1,47 +1,80 @@
-body {
-    margin: 0;
-    padding: 0;
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-
-.image {
-    flex: 1;
-    background-image: url('http://imgfz.com/i/Og2kXVs.jpeg');
+/* Control the left side */
+.left {
+    left: 0;
+    background-image: url('http://imgfz.com/i/lQevSTc.png');
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-position: 50% 50%;
 }
 
-.register-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 5px;
-    
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: whitesmoke;
 }
 
-.register-form h2 {
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.register-form .form-group {
-    margin-bottom: 20px;
-    width: 400px;
-}
-
-.register-form .form-group label {
+/* Style the image inside the centered container, if needed */
+.centered img {
+    width: 150px;
     display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+    margin: auto;
 }
 
+/* Adjustments for the form */
+.centered h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1C4881;
+}
+
+.centered form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.centered .form-group {
+    margin-bottom: 20px;
+}
+
+.centered label {
+    display: block;
+    text-align: left;
+}
+.centered .btn {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 50px;
+    background-color: #48A09A;
+    border: none;
+}
+
+.centered p {
+    margin-top: 20px;
+}
+
+.logo{
+    width: 50;
+}
+
+.fas{
+    color: #1C4881;
+}

@@ -1,66 +1,80 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-}
-
-.image {
-    flex: 1;
-    background-image: url('http://imgfz.com/i/Og2kXVs.jpeg');
-    background-size: cover;
-    background-position: center;
+.split {
+    height: 100%;
     width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
-.login-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.9);
+/* Control the left side */
+.left {
+    left: 0;
+    background-image: url('http://imgfz.com/i/uAQfmCG.jpeg');
+    background-size: cover;
+    background-position: 100% 50%;
 }
 
-.login-form h2 {
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: whitesmoke;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.login-form .form-group {
-    margin-bottom: 20px;
-    width: 400px;
-}
-
-.login-form .form-group label {
+/* Style the image inside the centered container, if needed */
+.centered img {
+    width: 150px;
     display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+    margin:auto;
 }
 
-.login-form .form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.login-form .btn-primary {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.login-form .register-link {
+/* Adjustments for the form */
+.centered h2 {
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: 10px;
+    color: #1C4881;
+}
+
+.centered form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.centered .form-group {
+    margin-bottom: 20px;
+}
+
+.centered label {
+    display: block;
+    text-align: left;
+}
+.centered .btn {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 50px;
+    background-color: #48A09A;
+    border: none;
+}
+
+.centered p {
+    margin-top: 20px;
+}
+
+.logo{
+    width: 50;
+}
+
+.fas{
+    color: #1C4881;
 }
