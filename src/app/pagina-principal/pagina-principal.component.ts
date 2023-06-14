@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pagina-principal.component.css']
 })
 export class PaginaPrincipalComponent implements OnInit {
+showLogin: any;
 
   constructor() { }
 

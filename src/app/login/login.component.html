@@ -1,9 +1,32 @@
-<app-header></app-header>
-
-
-<br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br>
-
-
-
-<app-footer></app-footer>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> Correo electrónico
+                    </label>
+                    <input type="email" id="email" class="form-control" placeholder="Correo electrónico" />
+                </div>
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i> Contraseña
+                    </label>
+                    <input type="password" id="password" class="form-control" placeholder="Contraseña" />
+                </div>
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            </form>
+            <div class="register-link">
+                ¿No tienes una cuenta? <a href="/registro">Regístrate aquí</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

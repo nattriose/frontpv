@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+openModal() {
+throw new Error('Method not implemented.');
+}
 
   constructor() { }
 
