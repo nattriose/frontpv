@@ -8,7 +8,6 @@
     padding-top: 20px;
 }
 
-/* Control the left side */
 .left {
     left: 0;
     background-image: url('http://imgfz.com/i/uAQfmCG.jpeg');
@@ -16,13 +15,11 @@
     background-position: 100% 50%;
 }
 
-/* Control the right side */
 .right {
     right: 0;
     background-color: whitesmoke;
 }
 
-/* If you want the content centered horizontally and vertically */
 .centered {
     position: absolute;
     top: 50%;
@@ -30,15 +27,12 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
-/* Style the image inside the centered container, if needed */
 .centered img {
     width: 150px;
     display: block;
     margin:auto;
 }
 
-/* Adjustments for the form */
 .centered h2 {
     margin-bottom: 20px;
     text-align: center;
