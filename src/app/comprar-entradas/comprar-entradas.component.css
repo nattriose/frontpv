@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 5px;
+}
+
+.form-group select {
+    margin-top: 5px;
+}
+
+.form-group .checkbox-group {
+    margin-top: 5px;
+}
+
+.form-group .checkbox-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #48A09A;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0px auto;
+    width: 300px;
+    border-radius: 10px;
+    
+}

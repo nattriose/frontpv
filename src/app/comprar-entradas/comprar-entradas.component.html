@@ -1,1 +1,53 @@
-<p>comprar-entradas works!</p>
+<app-header></app-header>
+
+<body>
+    <div class="container">
+        <h1>Compra de Entradas - Pantanos de Villa</h1>
+        <form>
+            <div class="form-group">
+                <label for="circuito">Circuito:</label>
+                <select id="circuito">
+                    <option value="genesis">Génesis (30 min)</option>
+                    <option value="tradicional">Tradicional (60 min)</option>
+                    <option value="marvilla">Marvilla (90 min)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo-entrada">Tipo de Entrada:</label>
+                <select id="tipo-entrada">
+                    <option value="general">Entrada General (20 soles)</option>
+                    <option value="niño">Niño (10 soles)</option>
+                    <option value="adulto-mayor">Adulto Mayor (10 soles)</option>
+                    <option value="escolar-docente">Escolar o Docente en Visita Educativa (8 soles)</option>
+                    <option value="estudiante-docente-universitario">Estudiante o Docente Universitario o de Educación
+                        Superior (13 soles)</option>
+                    <option value="visitante-extranjero">Visitante Extranjero (30 soles)</option>
+                    <option value="guiado-personalizado">Guiado Personalizado (50 soles)</option>
+                    <option value="guiado-especializado">Guiado Especializado (50 soles)</option>
+                    <option value="entrada-guiado-bilingue">Entrada con Guiado Bilingüe (50 soles)</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="embarcacion-group">
+                <label for="embarcacion">Embarcación:</label>
+                <select id="embarcacion">
+                    <option value="canoa">Canoa (5 soles)</option>
+                    <option value="bote">Bote (5 soles)</option>
+                    <option value="catamaran">Catamarán (7 soles)</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div>
+        <button type="button" id="agregar-carrito">
+            <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+        </button>
+    </div>
+</body>
+<br>
+<br>
+<br>
+<br>
+
+<app-footer></app-footer>
